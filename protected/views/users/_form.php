@@ -72,7 +72,6 @@
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'save')); ?>
             </div>
 	</div>
-test git netbeans
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
