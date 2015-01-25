@@ -1,0 +1,1700 @@
+2014/07/03 23:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "expense/admin".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('expense/admin')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/g_corporate/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/g_corporate/index.php?r=expense/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=financeCategory/admin
+---
+2014/07/03 23:19:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "expense/admin".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('expense/admin')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/g_corporate/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/g_corporate/index.php?r=expense/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=financeCategory/admin
+---
+2014/07/04 00:04:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aadmin".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('aadmin')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('aadmin')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/aadmin')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/g_corporate/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/g_corporate/index.php?r=assets/aadmin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=assets/create
+---
+2014/07/04 07:33:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "expense/admin".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('expense/admin')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/g_corporate/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/g_corporate/index.php?r=expense/admin
+HTTP_REFERER=http://localhost/g_corporate/
+---
+2014/07/04 08:01:48 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDownField".' in /var/www/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/g_corporate/protected/views/expense/_form.php(70): CComponent->__call('dropDownField', Array)
+#1 /var/www/g_corporate/protected/views/expense/_form.php(70): CActiveForm->dropDownField(Object(Expense), 'finance_categor...')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#5 /var/www/g_corporate/protected/views/expense/create.php(18): CController->renderPartial('_form', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#10 /var/www/g_corporate/protected/controllers/ExpenseController.php(79): CController->render('create', Array)
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): ExpenseController->actionCreate()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('expense/create')
+#22 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/g_corporate/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/g_corporate/index.php?r=expense/create
+---
+2014/07/04 08:29:27 [error] [exception.CException] exception 'CException' with message 'Property "Expense.FinanceCategory" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('FinanceCategory')
+#1 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('FinanceCategory')
+#2 /var/www/yii/framework/base/CComponent.php(612): eval()
+#3 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->FinanceC...', Array)
+#4 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Expense))
+#5 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#8 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/g_corporate/protected/views/expense/admin.php(74): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#15 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#16 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#18 /var/www/g_corporate/protected/controllers/ExpenseController.php(143): CController->render('admin', Array)
+#19 /var/www/yii/framework/web/actions/CInlineAction.php(49): ExpenseController->actionAdmin()
+#20 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#27 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#29 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('expense/admin')
+#30 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#31 /var/www/g_corporate/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/g_corporate/index.php?r=expense/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=expense/view&id=1
+---
+2014/07/05 00:30:57 [error] [exception.CException] exception 'CException' with message 'SiteController has an extra endWidget(CContentDecorator) call in its view.' in /var/www/yii/framework/web/CBaseController.php:210
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#1 /var/www/g_corporate/protected/views/layouts/site.php(30): CBaseController->endContent()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(784): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#5 /var/www/g_corporate/protected/controllers/SiteController.php(37): CController->render('index')
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/g_corporate/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/g_corporate/
+---
+2014/07/05 11:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "academics_home".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('academics_home')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('academics_home')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/academics_...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/g_corporate/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/g_corporate/index.php?r=site/academics_home
+HTTP_REFERER=http://localhost/g_corporate/index.php
+---
+2014/07/05 12:11:41 [error] [exception.CException] exception 'CException' with message 'Property "Students.studentscol" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('studentscol')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('studentscol')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(Students), 'studentscol')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(Students), 'studentscol', Array)
+#4 /var/www/yii/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(Students), 'studentscol', Array)
+#5 /var/www/g_corporate/protected/views/students/_search.php(31): CActiveForm->textField(Object(Students), 'studentscol', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#9 /var/www/g_corporate/protected/views/students/admin.php(40): CController->renderPartial('_search', Array)
+#10 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#11 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#12 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /var/www/g_corporate/protected/controllers/StudentsController.php(143): CController->render('admin', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(49): StudentsController->actionAdmin()
+#16 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#25 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/admin')
+#26 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /var/www/g_corporate/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=students/create
+---
+2014/07/05 12:26:51 [error] [exception.CException] exception 'CException' with message 'Property "Students.studentscol" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('studentscol')
+#1 /var/www/g_corporate/protected/models/Students.php(124): CActiveRecord->__get('studentscol')
+#2 /var/www/g_corporate/protected/views/students/admin.php(54): Students->search()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#4 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /var/www/g_corporate/protected/controllers/StudentsController.php(143): CController->render('admin', Array)
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): StudentsController->actionAdmin()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/admin')
+#19 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/g_corporate/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=students/create
+---
+2014/07/05 12:39:57 [error] [exception.CException] exception 'CException' with message 'Property "Students.financeCategory" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('financeCategory')
+#1 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('financeCategory')
+#2 /var/www/yii/framework/base/CComponent.php(612): eval()
+#3 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->financeC...', Array)
+#4 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Students))
+#5 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#8 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/g_corporate/protected/views/students/admin.php(86): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#15 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#16 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#18 /var/www/g_corporate/protected/controllers/StudentsController.php(160): CController->render('admin', Array)
+#19 /var/www/yii/framework/web/actions/CInlineAction.php(49): StudentsController->actionAdmin()
+#20 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#27 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#29 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/admin')
+#30 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#31 /var/www/g_corporate/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=students/create
+---
+2014/07/06 01:10:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "hr_home".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('hr_home')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('hr_home')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/hr_home')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/g_corporate/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/g_corporate/index.php?r=site/hr_home
+---
+2014/07/06 01:13:10 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "hr_home".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('hr_home', NULL, true)
+#1 /var/www/g_corporate/protected/controllers/SiteController.php(83): CController->render('hr_home')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionHr_home()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('hr_home')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/hr_home')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/g_corporate/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/g_corporate/index.php?r=site/hr_home
+---
+2014/07/06 01:54:09 [error] [php] Undefined variable: courses (/var/www/g_corporate/protected/views/payrollCategory/_form.php:57)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): PayrollCategoryController->renderFile()
+#1 /var/www/g_corporate/protected/views/payrollCategory/admin.php(54): PayrollCategoryController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii/framework/web/CBaseController.php(95): PayrollCategoryController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(869): PayrollCategoryController->renderFile()
+#5 /var/www/yii/framework/web/CController.php(782): PayrollCategoryController->renderPartial()
+#6 /var/www/g_corporate/protected/controllers/PayrollCategoryController.php(175): PayrollCategoryController->render()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): PayrollCategoryController->actionAdmin()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): PayrollCategoryController->runAction()
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): PayrollCategoryController->filterAccessControl()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): PayrollCategoryController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): PayrollCategoryController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=payrollCategory/admin
+in /var/www/g_corporate/protected/views/payrollCategory/_form.php (57)
+in /var/www/g_corporate/protected/views/payrollCategory/admin.php (54)
+in /var/www/g_corporate/protected/controllers/PayrollCategoryController.php (175)
+2014/07/12 11:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/g_corporate/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/g_corporate/index.php?r=site/about
+---
+2014/07/12 11:39:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page=about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('page=about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('page=about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page=about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/g_corporate/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/g_corporate/index.php?r=site/page=about
+---
+2014/07/17 16:45:25 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.status' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `employee_attendance` `t` WHERE t.status = :st.
+in /var/www/g_corporate/protected/views/employeeAttendance/admin.php (76)
+in /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php (160)
+in /var/www/g_corporate/index.php (13)
+2014/07/17 16:45:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.status' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `employee_attendance` `t` WHERE t.status = :st' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(1601): CDbCommand->queryScalar()
+#2 /var/www/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 /var/www/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 /var/www/yii/framework/zii/widgets/CBaseListView.php(111): CDataProvider->getData()
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#8 /var/www/yii/framework/web/CBaseController.php(147): CGridView->init()
+#9 /var/www/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/g_corporate/protected/views/employeeAttendance/admin.php(76): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#12 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#14 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#15 /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php(160): CController->render('admin', Array)
+#16 /var/www/yii/framework/web/actions/CInlineAction.php(49): EmployeeAttendanceController->actionAdmin()
+#17 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#26 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('employeeAttenda...')
+#27 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /var/www/g_corporate/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/g_corporate/index.php?r=employeeAttendance/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=employeeAttendance/create
+---
+2014/07/17 16:59:53 [error] [exception.CException] exception 'CException' with message 'Property "EmployeeAttendance.$data->employee->department" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('$data->employee...')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2518): CActiveRecord->__get('$data->employee...')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(EmployeeAttendance), '$data->employee...')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(EmployeeAttendance), '$data->employee...', Array)
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(EmployeeAttendance), '$data->employee...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/employeeAttendance/admin.php(85): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php(160): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): EmployeeAttendanceController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('employeeAttenda...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=employeeAttendance/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=employeeAttendance/update&id=4
+---
+2014/07/17 17:01:38 [error] [exception.CException] exception 'CException' with message 'Property "EmployeeAttendance.department" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('department')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('department')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(EmployeeAttendance), 'department')
+#3 /var/www/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(EmployeeAttendance), 'department', Array)
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(EmployeeAttendance), 'department', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/employeeAttendance/admin.php(85): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php(160): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): EmployeeAttendanceController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('employeeAttenda...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=employeeAttendance/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=employeeAttendance/update&id=4
+---
+2014/07/17 17:04:36 [error] [exception.CDbException] exception 'CDbException' with message 'EmployeeAttendance does not have relation "department".' in /var/www/yii/framework/db/ar/CActiveRecord.php:257
+Stack trace:
+#0 /var/www/g_corporate/protected/views/employeeAttendance/admin.php(67): CActiveRecord->getRelated('department')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#5 /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php(160): CController->render('admin', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): EmployeeAttendanceController->actionAdmin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('employeeAttenda...')
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/g_corporate/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/g_corporate/index.php?r=employeeAttendance/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=employeeAttendance/update&id=4
+---
+2014/07/17 17:07:52 [error] [exception.CDbException] exception 'CDbException' with message 'EmployeeAttendance does not have relation "employee->department['department_name']".' in /var/www/yii/framework/db/ar/CActiveRecord.php:257
+Stack trace:
+#0 /var/www/g_corporate/protected/views/employeeAttendance/admin.php(67): CActiveRecord->getRelated('employee->depar...')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#5 /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php(160): CController->render('admin', Array)
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): EmployeeAttendanceController->actionAdmin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('employeeAttenda...')
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/g_corporate/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/g_corporate/index.php?r=employeeAttendance/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=employeeAttendance/update&id=4
+---
+2014/07/18 00:17:53 [error] [php] call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members (/var/www/yii/framework/web/helpers/CHtml.php:2143)
+Stack trace:
+#0 /var/www/g_corporate/protected/views/employeeAttendance/admin.php(79): listData()
+#1 /var/www/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/yii/framework/web/CBaseController.php(95): EmployeeAttendanceController->renderInternal()
+#3 /var/www/yii/framework/web/CController.php(869): EmployeeAttendanceController->renderFile()
+#4 /var/www/yii/framework/web/CController.php(782): EmployeeAttendanceController->renderPartial()
+#5 /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php(160): EmployeeAttendanceController->render()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): EmployeeAttendanceController->actionAdmin()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): EmployeeAttendanceController->runAction()
+#9 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /var/www/yii/framework/web/filters/CInlineFilter.php(58): EmployeeAttendanceController->filterAccessControl()
+#12 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/yii/framework/web/CController.php(265): EmployeeAttendanceController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): EmployeeAttendanceController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=employeeAttendance/admin
+in /var/www/g_corporate/protected/views/employeeAttendance/admin.php (79)
+in /var/www/g_corporate/protected/controllers/EmployeeAttendanceController.php (160)
+in /var/www/g_corporate/index.php (13)
+2014/07/18 04:06:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create_reg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/create...')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/create_reg
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/registration_home
+---
+2014/07/18 04:06:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('createReg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/create...')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/createReg
+---
+2014/07/18 04:07:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create_reg".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('create_reg')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create_reg')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/create...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/g_corporate/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/create_reg
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/registration_home
+---
+2014/07/18 04:08:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('createReg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/create...')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/createReg
+---
+2014/07/18 04:11:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('reg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/reg')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/reg
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/registration_home
+---
+2014/07/18 04:11:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('reg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/reg')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/reg
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/registration_home
+---
+2014/07/18 04:12:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('reg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/reg')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/reg
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/registration_home
+---
+2014/07/18 04:14:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('reg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/reg')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/reg
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/registration_home
+---
+2014/07/18 04:14:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('reg')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/reg')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/reg
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/registration_home
+---
+2014/07/18 04:16:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reg".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('reg')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('reg')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/reg')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/g_corporate/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/reg
+---
+2014/07/18 11:40:37 [error] [exception.CException] exception 'CException' with message 'Property "PaySlip.batch_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('batch_id')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('batch_id')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1802): CHtml::resolveValue(Object(PaySlip), 'batch_id')
+#3 /var/www/yii/framework/web/widgets/CActiveForm.php(847): CHtml::activeDropDownList(Object(PaySlip), 'batch_id', Array, Array)
+#4 /var/www/g_corporate/protected/views/paySlip/_form.php(37): CActiveForm->dropDownList(Object(PaySlip), 'batch_id', Array, Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#8 /var/www/g_corporate/protected/views/paySlip/create.php(41): CController->renderPartial('_form', Array)
+#9 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#10 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#11 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#12 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/g_corporate/protected/controllers/PaySlipController.php(79): CController->render('create', Array)
+#14 /var/www/yii/framework/web/actions/CInlineAction.php(49): PaySlipController->actionCreate()
+#15 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('paySlip/create')
+#25 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /var/www/g_corporate/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/g_corporate/index.php?r=paySlip/create
+---
+2014/07/23 15:20:56 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(197): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (197)
+2014/07/23 15:26:55 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(197): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (197)
+2014/07/23 15:26:57 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(197): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (197)
+2014/07/23 15:26:58 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(197): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (197)
+2014/07/23 15:28:36 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(197): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (197)
+2014/07/23 15:28:53 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(197): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (197)
+2014/07/23 15:29:54 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(197): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (197)
+2014/07/23 15:32:34 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(199): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (199)
+2014/07/23 16:11:40 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(199): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (199)
+2014/07/23 16:14:54 [error] [php] include(/var/www/g_corporate/protected/vendors/HTML2PDF/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(199): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (199)
+2014/07/23 16:15:51 [error] [php] include(/var/www/g_corporate/protected/vendors/HTML2PDF/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(199): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (199)
+2014/07/23 16:15:55 [error] [php] include(/var/www/g_corporate/protected/vendors/HTML2PDF/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(199): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (199)
+2014/07/23 16:16:00 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(199): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (199)
+2014/07/23 16:42:39 [error] [php] include(/var/www/g_corporate/protected/vendors/html2pdf/html2pdf.class.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:401)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(82): ReflectionClass->__construct()
+#2 /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php(115): EYiiPdf->initLibrary()
+#3 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(199): EYiiPdf->HTML2PDF()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionIndex()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesPaymentController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesPaymentController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): FeesPaymentController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): FeesPaymentController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/index
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (82)
+in /var/www/g_corporate/protected/extensions/yii-pdf/EYiiPdf.php (115)
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (199)
+2014/08/18 14:39:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'fees_collection_id'. The SQL statement executed was: INSERT INTO `fees_payment` (`fees_payment_date`, `paid_amount`, `status`, `batch_id`, `fees_collection_id`, `student_id`, `fees_receipt_number`, `payment_mode`, `payment_remark`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (76)
+in /var/www/g_corporate/index.php (13)
+2014/08/18 14:39:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'fees_collection_id'. The SQL statement executed was: INSERT INTO `fees_payment` (`fees_payment_date`, `paid_amount`, `status`, `batch_id`, `fees_collection_id`, `student_id`, `fees_receipt_number`, `payment_mode`, `payment_remark`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(76): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/cre...')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/g_corporate/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/create
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/08/18 15:09:54 [error] [exception.CException] exception 'CException' with message 'Property "FeesPayment.students" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('students')
+#1 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('students')
+#2 /var/www/yii/framework/base/CComponent.php(612): eval()
+#3 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->students...', Array)
+#4 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#5 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#8 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#13 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#15 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#16 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#18 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#19 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#20 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#27 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#29 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#30 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#31 /var/www/g_corporate/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/08/18 15:10:19 [error] [exception.CException] exception 'CException' with message 'Property "Students.student_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('student_id')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('student_id')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('student_id')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->student[...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/08/18 16:03:30 [error] [exception.CException] exception 'CException' with message 'Property "Students.student_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('student_id')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('student_id')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('student_id')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->student[...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/login
+---
+2014/08/18 16:03:36 [error] [exception.CException] exception 'CException' with message 'Property "Students.student_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('student_id')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('student_id')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('student_id')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->student[...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/login
+---
+2014/08/18 16:04:03 [error] [exception.CException] exception 'CException' with message 'Property "Students.student_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('student_id')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('student_id')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('student_id')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->student[...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/login
+---
+2014/08/18 16:04:04 [error] [exception.CException] exception 'CException' with message 'Property "Students.student_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('student_id')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('student_id')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('student_id')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->student[...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/login
+---
+2014/08/18 16:04:05 [error] [exception.CException] exception 'CException' with message 'Property "Students.student_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('student_id')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('student_id')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('student_id')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->student[...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/login
+---
+2014/08/19 10:05:58 [error] [exception.CException] exception 'CException' with message 'Property "Students.student_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('student_id')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('student_id')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('student_id')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->student[...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/08/19 10:13:58 [error] [exception.CException] exception 'CException' with message 'Property "FeesCollection.fees_collection_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('fees_collection...')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('fees_collection...')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('fees_collection...')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->fees_col...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/08/19 10:15:15 [error] [exception.CException] exception 'CException' with message 'Property "FeesCollection.fees_collection_id" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('fees_collection...')
+#1 /var/www/yii/framework/base/CModel.php(596): CActiveRecord->__get('fees_collection...')
+#2 /var/www/yii/framework/base/CComponent.php(612) : eval()'d code(1): CModel->offsetGet('fees_collection...')
+#3 /var/www/yii/framework/base/CComponent.php(612): eval()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(137): CComponent->evaluateExpression('$data->fees_col...', Array)
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(FeesPayment))
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(616): CGridColumn->renderDataCell(0)
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(572): CGridView->renderTableRow(0)
+#8 /var/www/yii/framework/zii/widgets/grid/CGridView.php(482): CGridView->renderTableBody()
+#9 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /var/www/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /var/www/g_corporate/protected/views/feesPayment/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#16 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#17 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#18 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#20 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#21 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#30 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#31 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /var/www/g_corporate/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/08/21 13:00:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'fees_collection_id'. The SQL statement executed was: INSERT INTO `fees_payment` (`fees_payment_date`, `paid_amount`, `status`, `batch_id`, `fees_collection_id`, `student_id`, `fees_receipt_number`, `payment_mode`, `payment_remark`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in /var/www/g_corporate/protected/controllers/FeesPaymentController.php (76)
+in /var/www/g_corporate/index.php (13)
+2014/08/21 13:00:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'fees_collection_id'. The SQL statement executed was: INSERT INTO `fees_payment` (`fees_payment_date`, `paid_amount`, `status`, `batch_id`, `fees_collection_id`, `student_id`, `fees_receipt_number`, `payment_mode`, `payment_remark`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(76): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/cre...')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/g_corporate/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/create
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/09/12 11:46:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('loadstudents')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('batches/loadstu...')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=batches/loadstudents
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/09/12 12:02:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('loaddetails')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('students/loadde...')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=students/loaddetails
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/09/12 12:03:08 [error] [php] Object of class Students could not be converted to string (/var/www/g_corporate/protected/controllers/StudentsController.php:229)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): StudentsController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): StudentsController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): StudentsController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): StudentsController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=students/loaddetails
+in /var/www/g_corporate/protected/controllers/StudentsController.php (229)
+in /var/www/g_corporate/index.php (13)
+2014/09/12 13:57:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('loadcategory')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesCollection/...')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesCollection/loadcategory
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/09/12 13:58:18 [error] [php] Undefined index: fees_category_id (/var/www/g_corporate/protected/controllers/FeesCollectionController.php:194)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): FeesCollectionController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): FeesCollectionController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): FeesCollectionController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): FeesCollectionController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/g_corporate/index.php(13): CWebApplication->run()
+REQUEST_URI=/g_corporate/index.php?r=feesCollection/loadcategory
+in /var/www/g_corporate/protected/controllers/FeesCollectionController.php (194)
+in /var/www/g_corporate/index.php (13)
+2014/09/12 14:25:35 [error] [exception.CException] exception 'CException' with message 'Property "FeesCategory.category_name" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('category_name')
+#1 /var/www/g_corporate/protected/controllers/FeesCollectionController.php(195): CActiveRecord->__get('category_name')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesCollectionController->actionLoadcategory()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('loadcategory')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesCollection/...')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/g_corporate/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesCollection/loadcategory
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/09/18 13:54:18 [error] [exception.CException] exception 'CException' with message 'FeesPaymentController cannot find the requested view "admin".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#1 /var/www/g_corporate/protected/controllers/FeesPaymentController.php(219): CController->render('admin', Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): FeesPaymentController->actionAdmin()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('feesPayment/adm...')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/g_corporate/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/g_corporate/index.php?r=feesPayment/admin
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=feesPayment/create
+---
+2014/10/25 10:35:53 [error] [exception.CException] exception 'CException' with message 'ManageMenuController cannot find the requested view "academicSettings".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('academicSetting...', NULL, true)
+#1 /var/www/g_corporate/protected/controllers/ManageMenuController.php(21): CController->render('academicSetting...')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): ManageMenuController->actionAcademicSettings()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('academicSetting...')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('manageMenu/acad...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/g_corporate/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/g_corporate/index.php?r=manageMenu/academicSettings
+---
+2014/10/25 10:36:21 [error] [exception.CException] exception 'CException' with message 'ManageMenuController cannot find the requested view "academicSettings".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('academicSetting...', NULL, true)
+#1 /var/www/g_corporate/protected/controllers/ManageMenuController.php(21): CController->render('academicSetting...')
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): ManageMenuController->actionAcademicSettings()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('academicSetting...')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('manageMenu/acad...')
+#8 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/g_corporate/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/g_corporate/index.php?r=manageMenu/academicSettings
+---
+2014/11/20 15:52:06 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_type" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('user_type')
+#1 /var/www/g_corporate/protected/components/UserIdentity.php(56): CActiveRecord->__get('user_type')
+#2 /var/www/g_corporate/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#3 /var/www/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 /var/www/g_corporate/protected/controllers/SiteController.php(154): CModel->validate()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/g_corporate/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/g_corporate/index.php?r=site/login
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/login
+---
+2014/11/20 16:12:29 [error] [exception.CException] exception 'CException' with message 'Property "Users.center" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('center')
+#1 /var/www/g_corporate/protected/components/UserIdentity.php(59): CActiveRecord->__get('center')
+#2 /var/www/g_corporate/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#3 /var/www/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 /var/www/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 /var/www/g_corporate/protected/controllers/SiteController.php(154): CModel->validate()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/g_corporate/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/g_corporate/index.php?r=site/login
+HTTP_REFERER=http://localhost/g_corporate/index.php?r=site/login
+---
+2014/11/20 16:25:27 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_type" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('user_type')
+#1 /var/www/g_corporate/protected/models/Users.php(134): CActiveRecord->__get('user_type')
+#2 /var/www/g_corporate/protected/views/users/admin.php(33): Users->search()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#4 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /var/www/g_corporate/protected/controllers/UsersController.php(143): CController->render('admin', Array)
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#19 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/g_corporate/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/g_corporate/index.php?r=users/admin
+---
+2014/11/20 16:25:36 [error] [exception.CException] exception 'CException' with message 'Property "Users.user_type" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('user_type')
+#1 /var/www/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('user_type')
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1802): CHtml::resolveValue(Object(Users), 'user_type')
+#3 /var/www/yii/framework/web/widgets/CActiveForm.php(847): CHtml::activeDropDownList(Object(Users), 'user_type', Array, Array)
+#4 /var/www/g_corporate/protected/views/users/_form.php(43): CActiveForm->dropDownList(Object(Users), 'user_type', Array, Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#8 /var/www/g_corporate/protected/views/users/create.php(18): CController->renderPartial('_form', Array)
+#9 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/g_corp...')
+#10 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/g_corp...', Array, true)
+#11 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/g_corp...', Array, true)
+#12 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/g_corporate/protected/controllers/UsersController.php(79): CController->render('create', Array)
+#14 /var/www/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#15 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#25 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /var/www/g_corporate/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/g_corporate/index.php?r=users/create
+---
