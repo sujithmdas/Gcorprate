@@ -23,6 +23,9 @@
             <div class="form_label  w_150">
 		<?php echo $form->labelEx($model,'name'); ?>
             </div>
+            <?php if(isset($_GET['student_name']) && !empty($_GET['student_name']))
+                $model->name = $_GET['student_name'];
+            ?>
             <div class="form_field w_280">
 		<?php echo $form->textField($model,'name',array('class'=>'input','maxlength'=>60)); ?>
 		<?php echo $form->error($model,'name'); ?>
@@ -48,8 +51,13 @@
 		<?php echo $form->error($model,'password'); ?>
             </div>
 	</div>
-
-	<div class="row2">
+        <?php 
+              $display = null;
+              echo $_GET['student_id'];
+              if(isset($_GET['student_id']) && !empty($_GET['student_id']))
+                $display = 'display: none;';
+            ?>
+	<div class="row2" style="<?=$display?>">
             <div class="form_label  w_150">    
             <?php
                  $list = UserTypes::model()->findAll(array('condition'=>'status=:st', 'params'=>array(':st'=>'A')));
@@ -59,7 +67,8 @@
                 ?>
 		<?php echo $form->labelEx($model,'user_type_id'); ?>
             </div>
-            <div class="form_field w_280">
+            
+            <div class="form_field w_280" >
 		<?php echo $form->dropDownList($model,'user_type_id',$designations, array('empty' => 'Select User Type', 'class'=>'select')); ?>
 		<?php echo $form->error($model,'user_type_id'); ?>
             </div>
