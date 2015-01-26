@@ -7,12 +7,21 @@
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'IAMT CORPORATE',
+    // Set login as landing page.
+//    'defaultController' => 'site/login',
+    // Force login on every page.
+    'behaviors' => array(
+        'onBeginRequest' => array(
+            'class' => 'application.components.RequireLogin'
+        )
+    ),
     // preloading 'log' component
     'preload' => array('log'),
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.modules.users.models.*',
     ),
     'modules' => array(
         // uncomment the following to enable the Gii tool
@@ -23,6 +32,7 @@ return array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '::1'),
         ),
+        'users',
     ),
     // application components
     'components' => array(

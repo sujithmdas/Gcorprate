@@ -26,6 +26,11 @@
 		<?php echo $form->textField($model,'user_type',array('size'=>2,'maxlength'=>2)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'status'); ?>
+		<?php echo $form->textField($model,'status',array('size'=>1,'maxlength'=>1)); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

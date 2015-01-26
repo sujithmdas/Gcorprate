@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	//array('label'=>'List Users', 'url'=>array('index')),
+	array('label'=>'List Users', 'url'=>array('index')),
 	array('label'=>'Create Users', 'url'=>array('create')),
 );
 
@@ -28,19 +28,18 @@ $('.search-form form').submit(function(){
 
 <h1>Manage Users</h1>
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+    <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'users-grid',
 	'dataProvider'=>$model->search(),
-	//'filter'=>$model,
+	'filter'=>$model,
 	'columns'=>array(
-		'username',
-		'user_type',
-		'status',
 		'name',
-		'phone',
-		'center',
+		'username',
+		'password',
+		'user_type_id',
+		'status',
 		/*
-		'address',
+		'student_id',
 		*/
 		array(
 			'class'=>'CButtonColumn',

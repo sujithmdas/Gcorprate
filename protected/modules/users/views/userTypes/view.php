@@ -24,5 +24,6 @@ $this->menu=array(
 		'id',
 		'designation',
 		'user_type',
+		'status',
 	),
 )); ?>

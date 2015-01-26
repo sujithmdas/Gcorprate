@@ -17,5 +17,9 @@
 	<?php echo CHtml::encode($data->user_type); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
+	<?php echo CHtml::encode($data->status); ?>
+	<br />
+
 
 </div>

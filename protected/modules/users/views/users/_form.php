@@ -81,6 +81,7 @@
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'save')); ?>
             </div>
 	</div>
+
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
