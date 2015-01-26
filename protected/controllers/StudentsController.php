@@ -32,7 +32,7 @@ class StudentsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','create_reg','admin_reg','loaddetails'),
+				'actions'=>array('create','update','create_reg','admin_reg','loaddetails','createLogin'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -58,7 +58,7 @@ class StudentsController extends Controller
 
 	/**
 	 * Creates a new model.
-	 * If creation is successful, the browser will be redirected to the 'view' page.
+	 * If creation is successful, the browser will be redirected to the 'create_login' page.
 	 */
 	public function actionCreate()
 	{
@@ -72,8 +72,9 @@ class StudentsController extends Controller
 			$model->attributes=$_POST['Students'];
 			if($model->save())
                         {
-                            Yii::app()->user->setFlash('success', "Student Created Successfully!");
-                            $this->redirect(array('admin'));
+                            $student_id = $model->id;
+                            Yii::app()->user->setFlash('success', "Student Admitted Successfully!");
+                            $this->redirect(array('users/create', 'student_id'=>$student_id, 'student_name'=>$model->name, 'parent-name'=>$model->parent_name));
                         }
 		}
 

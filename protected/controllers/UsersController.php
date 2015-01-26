@@ -66,10 +66,36 @@ class UsersController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+                
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
+			if($model->save())
+				$this->redirect(array('admin'));
+		}
+
+		$this->render('create',array(
+			'model'=>$model,
+		));
+	}
+        
+        /**
+	 * Creates a new model.
+	 * If creation is successful, the browser will be redirected to the create parent login page.
+	 */
+	public function actionCreateStudent()
+	{
+		$model=new Users;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+                
+		if(isset($_POST['Users']))
+		{
+			$model->attributes=$_POST['Users'];
+                        $model->name = $_GET['student_name'];
+                        $model->student_id = $_GET['student_id'];
+                        $model->user_type = 'ST';
 			if($model->save())
 				$this->redirect(array('admin'));
 		}

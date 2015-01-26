@@ -44,11 +44,12 @@ class Students extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('admission_number, name, category_id, gender, parent_name, parent_phone, course_id, batch_id', 'required'),
-			array('category_id, pincode, course_id, batch_id', 'numerical', 'integerOnly'=>true),
+			array('admission_number, admission_date, name, category_id, gender, address, parent_name, parent_phone, course_id, batch_id', 'required'),
+			array('category_id, pincode, course_id, batch_id, parent_phone, mobile, home_number', 'numerical', 'integerOnly'=>true),
 			array('admission_number, name, email, parent_name', 'length', 'max'=>45),
 			array('gender, status', 'length', 'max'=>1),
-			array('parent_phone, home_number, mobile', 'length', 'max'=>14),
+			array('parent_phone, mobile', 'length', 'max'=>10, 'min'=>10),
+                        array('home_number', 'length', 'max'=>11, 'min'=>11),
 			array('admission_date, address, date_of_birth', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -88,7 +89,7 @@ class Students extends CActiveRecord
 			'date_of_birth' => 'Date Of Birth',
 			'pincode' => 'Pincode',
 			'parent_name' => 'Parent Name',
-			'parent_phone' => 'Parent Phone',
+			'parent_phone' => 'Parent Mobile',
 			'home_number' => 'Home Number',
 			'mobile' => 'Mobile',
 			'course_id' => 'Course',

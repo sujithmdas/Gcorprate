@@ -10,9 +10,7 @@
  * @property string $user_type
  * @property string $status
  * @property string $name
- * @property string $address
- * @property string $phone
- * @property string $center
+ * @property integer $student_id
  */
 class Users extends CActiveRecord
 {
@@ -35,12 +33,12 @@ class Users extends CActiveRecord
 			array('username, password, user_type_id, name, status', 'required'),
 			array('username', 'length', 'max'=>50),
 			array('password', 'length', 'max'=>100),
-			array('user_type_id', 'numerical', 'integerOnly'=>true),
+			array('user_type_id, student_id', 'numerical', 'integerOnly'=>true),
 			array('status', 'length', 'max'=>1),
 			array('name', 'length', 'max'=>60),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, username, password, user_type_id, status, name', 'safe', 'on'=>'search'),
+			array('username, user_type_id, status, name, student_id', 'safe', 'on'=>'search'),
 		);
 	}
 

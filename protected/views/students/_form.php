@@ -170,7 +170,7 @@
 		<?php echo $form->labelEx($model,'parent_phone'); ?>
             </div>
             <div class="form_field w_280">
-		<?php echo $form->textField($model,'parent_phone',array('class'=>'input','maxlength'=>14)); ?>
+		<?php echo $form->textField($model,'parent_phone',array('class'=>'input','maxlength'=>10)); ?>
 		<?php echo $form->error($model,'parent_phone'); ?>
             </div>
 	</div>
@@ -180,7 +180,7 @@
 		<?php echo $form->labelEx($model,'home_number'); ?>
             </div>
             <div class="form_field w_280">
-		<?php echo $form->textField($model,'home_number',array('class'=>'input','maxlength'=>14)); ?>
+		<?php echo $form->textField($model,'home_number',array('class'=>'input','maxlength'=>11)); ?>
 		<?php echo $form->error($model,'home_number'); ?>
             </div>
 	</div>
@@ -190,7 +190,7 @@
 		<?php echo $form->labelEx($model,'mobile'); ?>
             </div>
             <div class="form_field w_280">
-		<?php echo $form->textField($model,'mobile',array('class'=>'input','maxlength'=>14)); ?>
+		<?php echo $form->textField($model,'mobile',array('class'=>'input','maxlength'=>10)); ?>
 		<?php echo $form->error($model,'mobile'); ?>
             </div>
 	</div>
