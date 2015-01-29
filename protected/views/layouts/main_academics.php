@@ -80,12 +80,12 @@
                 <br/>
                 <div>
                     <div class="logo">
-                        <img src="images/iamt.png" />
+                        <?php echo CHtml::link('<img src="images/iamt.png" alt="IAMT logo" title="Home" />', array('site/index')); ?>
                     </div>
                     <div class="welcome">
                         <img src="images/user.png" /><br />
                         <span>Welcome Admin</span>
-<?php echo CHtml::link('<img src="images/logout.png" alt="Logout" name="img" width="20" height="20" border="0" id="img" title="Logout"/>', array('site/logout'), $htmlOptions = array('onmouseout' => 'MM_swapImgRestore()', 'onmouseover' => 'MM_swapImage("img","","images/logoutup.jpg",1)')); ?>
+                        <?php echo CHtml::link('<img src="images/logout.png" alt="Logout" name="img" width="20" height="20" border="0" id="img" title="Logout"/>', array('site/logout'), $htmlOptions = array('onmouseout' => 'MM_swapImgRestore()', 'onmouseover' => 'MM_swapImage("img","","images/logoutup.jpg",1)')); ?>
                     </div>
                 </div>
 
@@ -128,7 +128,7 @@
         <div class="content1">
 
             <div id="page-wrap">
-<?php echo $content; ?>
+                <?php echo $content; ?>
             </div>
         </div><!-- content1 -->
         <div class="clear"></div>

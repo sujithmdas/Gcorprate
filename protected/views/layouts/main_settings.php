@@ -52,7 +52,7 @@
   <br/>
   <div>
   <div class="logo">
-      <?php echo CHtml::link('<img src="images/iamt.png" alt="IAMT logo" title="Home" />',array('site/index')); ?>
+      <?php echo CHtml::link('<img src="images/iamt.png" alt="IAMT logo" title="Home" />',array('/site/index')); ?>
 </div>
 <div class="welcome">
 <img src="images/user.png" /><br />
@@ -150,15 +150,7 @@
 
 	</ul></li>
 
-	<li class="toplast"><a href="#" style="height:21px;line-height:21px;"><span><img src="images/bars.png" alt=""/>Asset &amp; Liability</span></a>
-
-	<ul>
-
-		<li class="subfirst"><?php echo CHtml::link('Create Asset',array('assets/create'), $htmlOptions=array ('style'=>'height:21px; line-height:21px;')); ?></li>
-
-		<li><?php echo CHtml::link('Create Liability',array('liabilities/create'), $htmlOptions=array ('style'=>'height:21px; line-height:21px;')); ?></li>
-
-	</ul></li>
+	<li class="toplast"><?php echo CHtml::link('<img src="images/bars.png" alt=""/>Users',array('users/users/admin'), $htmlOptions=array ('style'=>'height:21px; line-height:21px;')); ?></li>
 
 </ul>
 </div><!-- mainmenu -->

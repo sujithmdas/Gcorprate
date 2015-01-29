@@ -91,6 +91,15 @@ class SiteController extends Controller
 		$this->layout='column_registration';
 		$this->render('registration_home');
 	}
+        
+        public function actionSettings_home()
+	{
+            if(Yii::app()->user->getId()===null)
+            $this->redirect(array('site/login'));
+            
+		$this->layout='column_settings';
+		$this->render('settings_home');
+	}
 
 	/**
 	 * This is the action to handle external exceptions.

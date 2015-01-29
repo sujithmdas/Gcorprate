@@ -59,7 +59,7 @@ $this->pageTitle=Yii::app()->name;
     
     <?php echo CHtml::link('<input type="button" value="Transport"  class="finance7"/>','#', $htmlOptions=array ('title'=>'Transport', 'class'=>'noneanchor')); ?>
     
-    <?php echo CHtml::link('<input type="button" value="Settings"  class="finance8"/>','#', $htmlOptions=array ('title'=>'Settings', 'class'=>'noneanchor')); ?>
+    <?php echo CHtml::link('<input type="button" value="Settings"  class="finance8"/>',array('site/settings_home'), $htmlOptions=array ('title'=>'Settings', 'class'=>'noneanchor')); ?>
 
 
 </div>
