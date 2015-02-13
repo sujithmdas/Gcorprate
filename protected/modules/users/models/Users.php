@@ -37,6 +37,7 @@
                 array('username', 'length', 'max' => 50),
                 array('password', 'length', 'max' => 100),
                 array('status', 'length', 'max' => 1),
+                array('student_id', 'validateStudents'),//validate student_id according to user_type
                 // The following rule is used by search().
                 // @todo Please remove those attributes that should not be searched.
                 array('id, name, username, password, user_type_id, status, student_id', 'safe', 'on' => 'search'),
@@ -145,6 +146,16 @@
         {
             $this->password = $this->hashPassword($this->password);
             return parent::beforeSave();
+        }
+
+        public function validateStudents($attribute, $params)
+        {
+            if ($this->user_type_id == 4 || $this->user_type_id == 5)
+            {
+                $ev = new CValidator();
+                $ev->allowEmpty = false;
+                $ev->validate($this, $attribute);
+            }
         }
 
         /*

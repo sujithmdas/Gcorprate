@@ -51,10 +51,9 @@ class UsersController extends Controller
 	 */
 	public function actionView($id)
 	{
-            $this->redirect(array('admin'));
-//		$this->render('i',array(
-//			'model'=>$this->loadModel($id),
-//		));
+		$this->render('view',array(
+			'model'=>$this->loadModel($id),
+		));
 	}
 
 	/**

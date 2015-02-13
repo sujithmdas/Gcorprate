@@ -32,7 +32,7 @@ class BatchesController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'loadstudents'),
+				'actions'=>array('create','update', 'loadStudents', 'loadBatches'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -188,10 +188,22 @@ class BatchesController extends Controller
 		}
 	}
         
-        public function actionLoadstudents()
+        public function actionLoadBatches()
         {
-           $data=  Students::model()->findAll('batch_id=:batch_id', 
-           array(':batch_id'=>(int) $_POST['batch_id']));
+           $data=  Batches::model()->findAll('course_id=:course_id  AND status=:status', 
+           array(':course_id'=>(int) $_POST['course_id'], ':status'=>'A'));
+
+           $data=CHtml::listData($data,'id','batch_name');
+
+           echo "<option value=''>Select Batch</option>";
+           foreach($data as $value=>$batch_name)
+           echo CHtml::tag('option', array('value'=>$value),CHtml::encode($batch_name),true);
+        }
+        
+        public function actionLoadStudents()
+        {
+           $data=  Students::model()->findAll('batch_id=:batch_id AND status=:status', 
+           array(':batch_id'=>(int) $_POST['batch_id'], ':status'=>'A'));
 
            $data=CHtml::listData($data,'id','name');
 
